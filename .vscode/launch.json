@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "userService",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/xf/projects/mprpc/bin/userService",
+            "stopAtEntry": false,
+            "cwd": "/home/xf/projects/mprpc/bin",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            //"preLaunchTask": "g++ build active file",
+            "postDebugTask": "delete output file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "calller",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/xf/projects/mprpc/bin/calller",
+            "stopAtEntry": false,
+            "cwd": "/home/xf/projects/mprpc/bin",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            //"preLaunchTask": "g++ build active file",
+            "postDebugTask": "delete output file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}
